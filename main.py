@@ -517,8 +517,12 @@ def footer2():
                 color: black;
                 text-align: center;
             }
+        <style>
+            # MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
         </style>
-            <div class="footer">
+        </style>
+            <div class="footer" style='font-style: italic; color="#AFA1A1"' >
                 <a><b>Made with</b>: Python<b> By</b>: Hendri.</a>
                 <a>© Copyright 2022<a>
                 <a>All rights reserved. Powered by: Streamlit.</a>
