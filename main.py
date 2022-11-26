@@ -19,6 +19,13 @@ import uuid
 import re
 
 
+import joblib
+from numpy import random 
+import cufflinks
+import plotly.express as px
+import time 
+
+
 
 ##GLOBAL DEFINE (INIT)
 sb = st.sidebar                 #### define da sidebar
@@ -179,74 +186,9 @@ def header(page):
         content_htmlMarkdown(breadcrumb)
 
 
-def toPreviewDataset(newDfTrain, newDfTest):
-    # Preview Datas-set
-    try:
-        if (newDfTrain is not None) and (newDfTest is not None):
-            check_data0 = st.expander("SHOW: Dataset")
-            with check_data0:
-                dataMenuOpt = st.radio(
-                    '---',
-                    ('Dataset_file_train.csv', 'Dataset_file_test.csv')            
-                )
-                               
-                if dataMenuOpt == 'Dataset_file_train.csv':
-                    if newDfTrain is not None:
-                        Much_Data = st.slider("How many data dya wanna to see?", int(0), int(newDfTrain.shape[0]-2), key='mdya1')
-                        st.write(newDfTrain.head(Much_Data))
-
-                        check_data2 = st.checkbox("See attribute & data type", False, key='mdya2')
-                        if check_data2:
-                            if (newDfTrain.info() == None):
-                                infoTxt =  '''
-                                            Ups Sorry, this feature is not yet supported by the streamlit library in webview.
-                                            To see how to use this feature, plz run the source code via VSCode Terminal!
-                                        '''
-                                st.info(infoTxt)
-
-                            else:
-                                st.write(newDfTrain.info())
-
-                        check_data3 = st.checkbox("See some data analytic based on numeric column", False, key='mdya3')
-                        if check_data3:
-                            st.write(newDfTrain.describe())
-
-                if dataMenuOpt == 'Dataset_file_test.csv':
-                    if newDfTest is not None:
-                        Much_Data = st.slider("How many data dya wanna to see?", int(0), int(newDfTest.shape[0]-2), key='mdya4')
-                        st.write(newDfTest.head(Much_Data))
-
-                        check_data2 = st.checkbox("See attribute & data type", False, key='mdya5')
-                        if check_data2:
-                            if (newDfTest.info() == None):
-                                infoTxt =  '''
-                                            Ups Sorry, this feature is not yet supported by the streamlit library in webview.
-                                            To see how to use this feature, plz run the source code via VSCode Terminal!
-                                        '''
-                                st.info(infoTxt)
-
-                            else:
-                                st.write(newDfTest.info())
-
-                        check_data3 = st.checkbox("See some data analytic based on numeric column", False, key='mdya6')
-                        if check_data3:
-                            st.write(newDfTest.describe())
-
-    except ValueError:
-        st.error('Plz enter a valid input!')
-
-
-def trainModel():
-    pass
-
 
 def toProcessData():
     ########################################################################################
-    import joblib
-    from numpy import random 
-    import cufflinks
-    import plotly.express as px
-    import time 
     #--------------------------------------------------------------------------------------#
     #-----------Load Comparison DataFrame/Model/Assign variables---------------------------# 
     def load_model():
