@@ -3,7 +3,7 @@
 - Original Dataset: 
 [Kaggle Link](https://www.kaggle.com/fedesoriano/body-fat-prediction-dataset)<br/>
 - Deployment: 
-[Streamlit Webapp](https://share.streamlit.io/youssefsultan/predict-bodyfat-using-catboost-webapp/main/Predict.py)<br/>
+[Streamlit Webapp](https://henrykim2022-mle-uas-bodyfat-percentage-predictor-main-bh4tmv.streamlit.app/)<br/>
 
 
 ## Application
