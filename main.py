@@ -416,7 +416,7 @@ def content(ctId):
     elif ctId == "Downloads":
         def download_button(pickle_it=False):
             folder_path = '.'
-            filename_list = (p.resolve() for p in Path(folder_path).glob("**/*") if p.suffix in {".rar", ".py", ".txt", ".csv", ".pkl"})
+            filename_list = (p.resolve() for p in Path(folder_path).glob("**/*") if p.suffix in {".rar", ".zip", ".py", ".txt", ".csv", ".pkl"})
             selected_filename = st.selectbox('Select a file to download', filename_list)
 
             fulllink = os.path.join(folder_path, selected_filename)
