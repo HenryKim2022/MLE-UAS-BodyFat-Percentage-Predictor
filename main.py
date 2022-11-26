@@ -517,16 +517,15 @@ def footer2():
                 color: black;
                 text-align: center;
             }
+        </style>    
         <style>
             # MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
         </style>
-        </style>
-            <div class="footer">
-            <b>Made with</b>: Python<b> Developed by</b>: <a style='display: block; text-align: center;' href="https://bit.ly/3F5BzMm/" target="_blank">Hendri.</a><br>
+        <div class="footer">
+            <b>Made with</b>: Python<b> Developed by</b>: <a style='display: block; text-align: center;' href="https://bit.ly/3F5BzMm/" target="_blank">Hendri.</a>
             © Copyright 2022<br>
-            All rights reserved. Powered by:<a style='display: block; text-align: center;' href="https://streamlit.io/" target="_blank"> Streamlit.<br>
-        </div>
+            All rights reserved. Powered by:<a style='display: block; text-align: center;' href="https://streamlit.io/" target="_blank"> Streamlit.
         </div>
     """
     content_htmlMarkdown(footerTxt)
