@@ -518,13 +518,12 @@ def footer2():
                 text-align: center;
             }
         </style>
-        <div class="footer">
-            <p><a><b>Made with</b>: Python<b> By</b>: Hendri.</a></p>
-            <p><a>© Copyright 2022<a></p>
-            <p><a>All rights reserved. Powered by: Streamlit.</a></p>
-            <p>
+            <div class="footer">
+                <a><b>Made with</b>: Python<b> By</b>: Hendri.</a>
+                <a>© Copyright 2022<a>
+                <a>All rights reserved. Powered by: Streamlit.</a>
                 Developed with ❤ by <a style='display: block; text-align: center;' href="https://bit.ly/3F5BzMm/" target="_blank">Hendri</a>
-            </p>
+            </div>
         </div>
     """
     content_htmlMarkdown(footerTxt)
