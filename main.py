@@ -497,6 +497,6 @@ if __name__ == "__main__":
     header(page)
     content(page)
     sideBar()
-    footer()
+    #footer()
 
 
