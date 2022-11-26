@@ -523,9 +523,9 @@ def footer2():
         </style>
         </style>
             <div class="footer" style='font-style: italic; color="#AFA1A1"' >
-                <a><b>Made with</b>: Python<b> By</b>: Hendri.</a>
-                <a>© Copyright 2022<a>
-                <a>All rights reserved. Powered by: Streamlit.</a>
+                <a><b>Made with</b>: Python<b> By</b>: Hendri.</a><br>
+                <a>© Copyright 2022<a><br>
+                <a>All rights reserved. Powered by: Streamlit.</a><br>
                 Developed with ❤ by <a style='display: block; text-align: center;' href="https://bit.ly/3F5BzMm/" target="_blank">Hendri</a>
             </div>
         </div>
