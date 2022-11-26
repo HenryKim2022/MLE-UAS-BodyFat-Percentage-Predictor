@@ -565,7 +565,7 @@ def footer2():
 
             .footer {
                 position: static;
-                border-radius: 15px;
+                border-radius: 8px;
                 left: 0;
                 bottom: 0;
                 width: 100%;
