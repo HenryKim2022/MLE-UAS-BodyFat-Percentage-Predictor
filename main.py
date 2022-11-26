@@ -245,12 +245,12 @@ def toProcessData():
                 Thigh = st.number_input("Enter your Thigh measurement (cm)")
                 Knee = st.number_input("Enter your Knee measurement (cm)") 
                 Ankle = st.number_input("Enter your Ankle measurement (cm)")
-                Age = st.slider("Choose your age", int(dfr.Age.min()), int(dfr.Age.max())) 
             with c5: 
                 Biceps = st.number_input("Enter your Biceps measurement (cm)")
                 Forearm = st.number_input("Enter your Forearm measurement (cm)")
                 Wrist = st.number_input("Enter your Wrist measurement (cm)")
                 Abdomen = st.number_input("Enter your Waist measurement (cm)")   
+                Age = st.slider("Choose your age", int(dfr.Age.min()), int(dfr.Age.max())) 
         else: 
             if rand:
                 w, h, n, c, hi, th, kn, an, bi, fo, wr, ag, wa = dfr.sample().values.tolist()[0]  
@@ -264,12 +264,12 @@ def toProcessData():
                     Thigh = st.number_input("Enter your Thigh measurement (cm)", value=th)
                     Knee = st.number_input("Enter your Knee measurement (cm)", value=kn) 
                     Ankle = st.number_input("Enter your Ankle measurement (cm)", value=an)
-                    Age = st.slider("Choose your age", int(dfr.Age.min()), int(dfr.Age.max()),   value=int(ag)) 
                 with c5: 
                     Biceps = st.number_input("Enter your Biceps measurement (cm)", value=bi)
                     Forearm = st.number_input("Enter your Forearm measurement (cm)", value=fo)
                     Wrist = st.number_input("Enter your Wrist measurement (cm)", value=wr)
                     Abdomen = st.number_input("Enter your Waist measurement (cm)", value=wa)
+                    Age = st.slider("Choose your age", int(dfr.Age.min()), int(dfr.Age.max()),   value=int(ag)) 
                 X = np.array([[Weight/Abdomen, Height/Abdomen, Neck/Abdomen, Chest/Abdomen, Hip/Abdomen, Thigh/Abdomen, Knee/Abdomen, Ankle/Abdomen, Biceps/Abdomen, Forearm/Abdomen, Wrist/Abdomen, Age, Abdomen]])
                 X = X.astype(float)  
                 percent = regressor.predict(X)
@@ -313,12 +313,12 @@ def toProcessData():
                     Thigh = st.number_input("Enter your Thigh measurement (cm)")
                     Knee = st.number_input("Enter your Knee measurement (cm)") 
                     Ankle = st.number_input("Enter your Ankle measurement (cm)")
-                    Age = st.slider("Choose your age", int(dfr.Age.min()), int(dfr.Age.max()) )
                 with c5: 
                     Biceps = st.number_input("Enter your Biceps measurement (cm)")
                     Forearm = st.number_input("Enter your Forearm measurement (cm)")
                     Wrist = st.number_input("Enter your Wrist measurement (cm)")
                     Abdomen = st.number_input("Enter your Waist measurement (cm)")
+                    Age = st.slider("Choose your age", int(dfr.Age.min()), int(dfr.Age.max()) )
                 if (Weight >= 125) & (Weight <= 145): 
                     q = df[(df.Weight >= 125) & (df.Weight <= 145)]
                     txt = "125-145"
