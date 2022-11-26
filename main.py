@@ -494,19 +494,44 @@ def content(ctId):
 
 
 def footer2():
-    footerTxt = [
-        "<b>Made with</b>: Python ",
-        link("https://www.python.org/", image('https://i.imgur.com/ml09ccU.png',
-        	width=px(18), height=px(18), margin= "0em")),
-        "<b> By</b>: Hendri.",
-        br(),
+    footerTxt="""
+        <style>
+            a:link , a:visited{
+                color: blue;
+                background-color: transparent;
+                text-decoration: underline;
+            }
 
-        "© Copyright " + str(yearGen()[0]) + " - " + str(yearGen()[1]) + ".", br(),
-        "All rights reserved. Powered by: Streamlit ",
-        link("https://streamlit.io/", image('https://streamlit.io/images/brand/streamlit-mark-color.png',
-        	width=px(24), height=px(14), margin= "0em", align="top")),".",      
-    ]
-    content_htmlMarkdown(footerTxt)            
+            a:hover,  a:active {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: white;
+                color: black;
+                text-align: center;
+            }
+        </style>
+        <div class="footer">
+            <p>
+                <br><a><b>Made with</b>: Python<b> By</b>: Hendri.</a></br>
+                <br><a>© Copyright 2022<a></br>
+                <br><a>All rights reserved. Powered by: Streamlit.</a></br>
+            </p>
+            <p><a/>
+                Developed with ❤ by <a style='display: block; text-align: center;' 
+                href="https://bit.ly/3F5BzMm/" target="_blank">Hendri</a>
+            </a></p>
+        </div>
+    """
+    content_htmlMarkdown(footerTxt)
+    
             
             
 if __name__ == "__main__":
