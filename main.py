@@ -494,22 +494,77 @@ def content(ctId):
 
 
 def footer2():
-    footerTxt="""
+    footerTxt="""  
         <style>
-            a:link , a:visited{
+            # MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+        </style>
+   
+        <div class="footer">
+                <p class="headerStyle"><b>Get In Touch With Me</b></p>
+                <a href="https://stackoverflow.com/"><img class="image1" src="https://cdn-icons-png.flaticon.com/128/2111/2111628.png"
+                        alt="stackoverflow icon" width="60" height="60"></a>
+                <a href="https://www.linkedin.com"><img class="image2" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                        alt="linkedin icon" width="60" height="60">
+                </a>
+        </div>
+
+        <style>
+            img {
+                max-width: 100%;
+
+            }
+
+            .headerStyle {
+                transition: transform .2s;
+            }
+
+            .headerStyle:hover {
+
+                 transform: scale(1.5);
+                transition: 0.2s;
+            }
+            .image1 { 
+                padding: 10px;
+                 transition: transform .2s;
+            }
+            .image2 
+            { 
+                padding: 10px;
+                 transition: transform .2s;
+            }
+            .image1:hover {  
+                ##border: 4px solid green;
+                ##border-radius: 15px;
+                 transform: scale(1.5);
+                transition: 0.2s;
+            }
+
+            .image2:hover {  
+                ##border: 4px solid green;
+                ##border-radius: 15px;
+                 transform: scale(1.5);
+                transition: 0.2s;
+            }
+
+            a:link,
+            a:visited {
                 color: blue;
                 background-color: transparent;
                 text-decoration: underline;
             }
 
-            a:hover,  a:active {
+            a2:hover {
+                border-style: solid;
+                },
+            a:active {
                 color: red;
                 background-color: transparent;
                 text-decoration: underline;
             }
 
             .footer {
-                position: fixed;
+                position: static;
                 left: 0;
                 bottom: 0;
                 width: 100%;
@@ -517,16 +572,7 @@ def footer2():
                 color: black;
                 text-align: center;
             }
-        </style>    
-        <style>
-            # MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
         </style>
-        <div class="footer">
-            <b>Made with</b>: Python<b> Developed by</b>: <a style='display: block; text-align: center;' href="https://bit.ly/3F5BzMm/" target="_blank">Hendri.</a>
-            © Copyright 2022<br>
-            All rights reserved. Powered by:<a style='display: block; text-align: center;' href="https://streamlit.io/" target="_blank"> Streamlit.
-        </div>
     """
     content_htmlMarkdown(footerTxt)
     
