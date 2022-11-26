@@ -519,15 +519,12 @@ def footer2():
             }
         </style>
         <div class="footer">
+            <p><a><b>Made with</b>: Python<b> By</b>: Hendri.</a></p>
+            <p><a>© Copyright 2022<a></p>
+            <p><a>All rights reserved. Powered by: Streamlit.</a></p>
             <p>
-                <br><a><b>Made with</b>: Python<b> By</b>: Hendri.</a></br>
-                <br><a>© Copyright 2022<a></br>
-                <br><a>All rights reserved. Powered by: Streamlit.</a></br>
+                Developed with ❤ by <a style='display: block; text-align: center;' href="https://bit.ly/3F5BzMm/" target="_blank">Hendri</a>
             </p>
-            <p><a/>
-                Developed with ❤ by <a style='display: block; text-align: center;' 
-                href="https://bit.ly/3F5BzMm/" target="_blank">Hendri</a>
-            </a></p>
         </div>
     """
     content_htmlMarkdown(footerTxt)
