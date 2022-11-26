@@ -488,7 +488,7 @@ def content(ctId):
             '''
             st.info(infoTxt)
 
-            url = "https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py"
+            url = "https://bit.ly/3F5BzMm"
             st.markdown("Visit sources on : [Github](%s)" % url)
 
 
@@ -497,6 +497,6 @@ if __name__ == "__main__":
     header(page)
     content(page)
     sideBar()
-    #footer()
+    footer()
 
 
