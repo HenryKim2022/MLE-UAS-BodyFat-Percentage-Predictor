@@ -500,7 +500,7 @@ def footer2():
             footer {visibility: hidden;}
         </style>
    
-        <div class="footer">
+        <div class="footer"><br><br>
                 <p class="headerStyle"><b>Get In Touch With Me</b></p>
                 <a href="https://instagram.com/henrykim119/"><img class="image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png"
                         alt="ig icon" width="60" height="60"></a>
