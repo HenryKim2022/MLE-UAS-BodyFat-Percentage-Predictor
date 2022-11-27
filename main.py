@@ -174,7 +174,9 @@ def header(page):
                 '<a style="color:#e67716;">Downloads »</a></h6>'
             content_htmlMarkdown(breadcrumb)
             try:  
-                content('Downloads')
+                FooterExp1 = st.expander("", True)
+                with FooterExp1:
+                    content('Downloads')
             except ValueError:
                 st.error("Streamlit is under development, some feature limited. To see how's this feature workking, download the source code.")
             pass
@@ -494,91 +496,89 @@ def content(ctId):
 
 
 def footer2():
-    FooterExp1 = st.expander("", True)
-    with FooterExp1:
-        footerTxt="""  
-            <style>
-                # MainMenu {visibility: hidden;}
-                footer {visibility: hidden;}
-            </style>
+    footerTxt="""  
+        <style>
+            # MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+        </style>
 
-            <div class="footer"><br><br>
-                    <p class="headerStyle"><b>Get In Touch With Me</b></p>
-                    <a href="https://instagram.com/henrykim119/"><img class="image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png"
-                            alt="ig icon" width="60" height="60"></a>
-                    <a href="https://github.com/HenryKim2022/"><img class="image2" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
-                            alt="github icon" width="60" height="60">
-                    </a>
-            </div>
+        <div class="footer"><br><br>
+                <p class="headerStyle"><b>Get In Touch With Me</b></p>
+                <a href="https://instagram.com/henrykim119/"><img class="image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png"
+                        alt="ig icon" width="60" height="60"></a>
+                <a href="https://github.com/HenryKim2022/"><img class="image2" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
+                        alt="github icon" width="60" height="60">
+                </a>
+        </div>
 
-            <style>
-                img {
-                    max-width: 100%;
+        <style>
+            img {
+                max-width: 100%;
 
-                }
+            }
 
-                .headerStyle {
-                    transition: transform .2s;
-                }
+            .headerStyle {
+                transition: transform .2s;
+            }
 
-                .headerStyle:hover {
+            .headerStyle:hover {
 
-                     transform: scale(1.5);
-                    transition: 0.2s;
-                }
-                .image1 { 
-                    padding: 10px;
-                     transition: transform .2s;
-                }
-                .image2 
-                { 
-                    padding: 10px;
-                     transition: transform .2s;
-                }
-                .image1:hover {  
-                    ##border: 4px solid green;
-                    ##border-radius: 15px;
-                     transform: scale(1.5);
-                    transition: 0.2s;
-                }
+                 transform: scale(1.5);
+                transition: 0.2s;
+            }
+            .image1 { 
+                padding: 10px;
+                 transition: transform .2s;
+            }
+            .image2 
+            { 
+                padding: 10px;
+                 transition: transform .2s;
+            }
+            .image1:hover {  
+                ##border: 4px solid green;
+                ##border-radius: 15px;
+                 transform: scale(1.5);
+                transition: 0.2s;
+            }
 
-                .image2:hover {  
-                    ##border: 4px solid green;
-                    ##border-radius: 15px;
-                     transform: scale(1.5);
-                    transition: 0.2s;
-                }
+            .image2:hover {  
+                ##border: 4px solid green;
+                ##border-radius: 15px;
+                 transform: scale(1.5);
+                transition: 0.2s;
+            }
 
-                a:link,
-                a:visited {
-                    color: blue;
-                    background-color: transparent;
-                    text-decoration: underline;
-                }
+            a:link,
+            a:visited {
+                color: blue;
+                background-color: transparent;
+                text-decoration: underline;
+            }
 
-                a2:hover {
-                    border-style: solid;
-                    },
-                a:active {
-                    color: red;
-                    background-color: transparent;
-                    text-decoration: underline;
-                }
+            a2:hover {
+                border-style: solid;
+                },
+            a:active {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
 
-                .footer {
-                    position: static;
-                    border-radius: 8px;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    background-color: white;
-                    color: black;
-                    text-align: center;
-                }
-            </style>
-        """
-        content_htmlMarkdown(footerTxt)
-    
+            .footer {
+                position: static;
+                border-radius: 8px;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: white;
+                color: black;
+                text-align: center;
+            }
+        </style>
+    """
+    content_htmlMarkdown(footerTxt)
+
             
             
 if __name__ == "__main__":
