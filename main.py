@@ -502,7 +502,7 @@ def footer2():
    
         <div class="footer">
                 <p class="headerStyle"><b>Get In Touch With Me</b></p>
-                <a href="https://instagram.com/henrykim119/"><img class="image1" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fid.m.wikipedia.org%2Fwiki%2FBerkas%3AInstagram_logo_2022.svg&psig=AOvVaw2qsCSFb1GpR-HGtlyGWVvR&ust=1669610036031000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNDA45rEzfsCFQAAAAAdAAAAABAT"
+                <a href="https://instagram.com/henrykim119/"><img class="image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png"
                         alt="ig icon" width="60" height="60"></a>
                 <a href="https://github.com/HenryKim2022/"><img class="image2" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
                         alt="github icon" width="60" height="60">
